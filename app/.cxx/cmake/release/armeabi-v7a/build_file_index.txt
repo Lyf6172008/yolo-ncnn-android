@@ -1,0 +1,13 @@
+D:\AndroidWork\Yolo5_screen_identify\app\src\main\jni\armeabi-v7a\lib\cmake\glslang\glslang-config-version.cmake
+D:\AndroidWork\Yolo5_screen_identify\app\src\main\jni\armeabi-v7a\lib\cmake\glslang\glslang-config.cmake
+D:\AndroidWork\Yolo5_screen_identify\app\src\main\jni\armeabi-v7a\lib\cmake\glslang\glslang-targets-release.cmake
+D:\AndroidWork\Yolo5_screen_identify\app\src\main\jni\armeabi-v7a\lib\cmake\glslang\glslang-targets.cmake
+D:\AndroidWork\Yolo5_screen_identify\app\src\main\jni\armeabi-v7a\lib\cmake\ncnn\ncnn-release.cmake
+D:\AndroidWork\Yolo5_screen_identify\app\src\main\jni\armeabi-v7a\lib\cmake\ncnn\ncnn.cmake
+D:\AndroidWork\Yolo5_screen_identify\app\src\main\jni\armeabi-v7a\lib\cmake\ncnn\ncnnConfig.cmake
+D:\AndroidWork\Yolo5_screen_identify\app\src\main\jni\CMakeLists.txt
+D:\AndroidWork\Yolo5_screen_identify\app\src\main\jni\OpenCV-android-sdk\sdk\native\jni\abi-armeabi-v7a\OpenCVConfig.cmake
+D:\AndroidWork\Yolo5_screen_identify\app\src\main\jni\OpenCV-android-sdk\sdk\native\jni\abi-armeabi-v7a\OpenCVModules-release.cmake
+D:\AndroidWork\Yolo5_screen_identify\app\src\main\jni\OpenCV-android-sdk\sdk\native\jni\abi-armeabi-v7a\OpenCVModules.cmake
+D:\AndroidWork\Yolo5_screen_identify\app\src\main\jni\OpenCV-android-sdk\sdk\native\jni\OpenCVConfig-version.cmake
+D:\AndroidWork\Yolo5_screen_identify\app\src\main\jni\OpenCV-android-sdk\sdk\native\jni\OpenCVConfig.cmake

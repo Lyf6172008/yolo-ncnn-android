@@ -1,0 +1,12 @@
+ninja: Entering directory `D:\AndroidWork\Yolo5_screen_identify\app\.cxx\cmake\debug\armeabi-v7a'
+[1/4] Building CXX object CMakeFiles/yolov5ncnn.dir/yolov8.cpp.o
+[2/4] Building CXX object CMakeFiles/yolov5ncnn.dir/yolov8_det.cpp.o
+[3/4] Building CXX object CMakeFiles/yolov5ncnn.dir/yolov5ncnn_jni.cpp.o
+D:/AndroidWork/Yolo5_screen_identify/app/src/main/jni/yolov5ncnn_jni.cpp:461:14: warning: result of comparison against a string literal is unspecified (use an explicit string comparison function instead) [-Wstring-compare]
+  461 |     if ("v5" == env->GetStringUTFChars(jni_model_tyle, (jboolean *) false)) {
+      |         ~~~~ ^
+D:/AndroidWork/Yolo5_screen_identify/app/src/main/jni/yolov5ncnn_jni.cpp:486:21: warning: result of comparison against a string literal is unspecified (use an explicit string comparison function instead) [-Wstring-compare]
+  486 |     } else if ("v8" == env->GetStringUTFChars(jni_model_tyle, (jboolean *) false)) {
+      |                ~~~~ ^
+2 warnings generated.
+[4/4] Linking CXX shared library D:\AndroidWork\Yolo5_screen_identify\app\build\intermediates\cmake\debug\obj\armeabi-v7a\libyolov5ncnn.so

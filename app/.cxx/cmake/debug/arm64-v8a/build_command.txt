@@ -1,0 +1,25 @@
+                    Executable : D:\Android\sdk\cmake\3.22.1\bin\cmake.exe
+arguments : 
+-HD:\AndroidWork\Yolo5_screen_identify\app\src\main\jni
+-DCMAKE_CXX_FLAGS=-std=c++17 -stdlib=libc++
+-DCMAKE_FIND_ROOT_PATH=D:\AndroidWork\Yolo5_screen_identify\app\.cxx\cmake\debug\prefab\arm64-v8a\prefab
+-DCMAKE_BUILD_TYPE=Debug
+-DCMAKE_TOOLCHAIN_FILE=D:\Android\sdk\ndk\27.1.12297006\build\cmake\android.toolchain.cmake
+-DANDROID_ABI=arm64-v8a
+-DANDROID_NDK=D:\Android\sdk\ndk\27.1.12297006
+-DANDROID_PLATFORM=android-24
+-DCMAKE_ANDROID_ARCH_ABI=arm64-v8a
+-DCMAKE_ANDROID_NDK=D:\Android\sdk\ndk\27.1.12297006
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\AndroidWork\Yolo5_screen_identify\app\build\intermediates\cmake\debug\obj\arm64-v8a
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=D:\AndroidWork\Yolo5_screen_identify\app\build\intermediates\cmake\debug\obj\arm64-v8a
+-DCMAKE_MAKE_PROGRAM=D:\Android\sdk\cmake\3.22.1\bin\ninja.exe
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_SYSTEM_VERSION=24
+-BD:\AndroidWork\Yolo5_screen_identify\app\.cxx\cmake\debug\arm64-v8a
+-GNinja
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 1

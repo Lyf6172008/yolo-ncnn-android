@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.hutool:hutool-all:5.7.16" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="cn.hutool" artifactId="hutool-all" version="5.7.16" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.hutool/hutool-all/5.7.16/b55e91566e2b5de26e0203928fbe2cddb7ee3404/hutool-all-5.7.16.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.hutool/hutool-all/5.7.16/d94bbe2c948fe4ff86e9bcdb56faeda764e883aa/hutool-all-5.7.16-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.hutool/hutool-all/5.7.16/2f326d37587bbb6e21bdb21a2277039600dcf003/hutool-all-5.7.16-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

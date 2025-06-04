@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        style="@style/CustomCheckboxTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:layout_margin="5dp"
+        android:textColor="#f2f2f2"
+        android:textSize="16dp" />
+</LinearLayout>

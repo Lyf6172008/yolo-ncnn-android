@@ -1,0 +1,4 @@
+-- Found OpenCV: D:/AndroidWork/OpenCV-android-sdk (found version "4.9.0") found components: core imgproc imgcodecs 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/AndroidWork/Yolo5_screen_identify/app/.cxx/cmake/debug/arm64-v8a

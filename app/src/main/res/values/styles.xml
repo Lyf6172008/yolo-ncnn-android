@@ -1,0 +1,22 @@
+<resources>
+    <style name="AppTheme.NoTitle_FullScreen"> <!--自定义主题名称-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="AppTheme">AppTheme</style>
+    <style name="sku_rd">
+        <item name="android:textColor">@color/selector_text</item>
+        <item name="android:background">@drawable/check_boxs</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="sku_rd2">
+        <item name="android:textColor">@color/selector_text</item>
+        <item name="android:background">@drawable/check_boxs2</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+</resources>

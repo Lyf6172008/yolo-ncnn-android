@@ -1,0 +1,2 @@
+ninja: Entering directory `D:\AndroidWork\Yolo5_screen_identify\app\.cxx\cmake\release\arm64-v8a'
+ninja: no work to do.

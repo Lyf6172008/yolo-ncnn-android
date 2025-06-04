@@ -1,0 +1,11 @@
+# ninja log v5
+63	22845	7647706159171011	CMakeFiles/yolov5ncnn.dir/yolov8_seg.cpp.o	5cb6b1fe6d062e24
+0	28	0	clean	267b28daf0e986
+24295	26046	7647706190247645	D:/AndroidWork/Yolo5_screen_identify/app/build/intermediates/cmake/release/obj/armeabi-v7a/libyolov5ncnn.so	89d02ae924fb2dc1
+19	24294	7647706173259442	CMakeFiles/yolov5ncnn.dir/yolov5ncnn_jni.cpp.o	e8e06f71c6df8ac2
+2	281	7707333260210262	build.ninja	4981b063045ca027
+43	21803	7647706148299933	CMakeFiles/yolov5ncnn.dir/yolov8_det.cpp.o	bc59d1bb4da7395e
+40	16205	7647706091906882	CMakeFiles/yolov5ncnn.dir/yolov8.cpp.o	b9236f825c4449
+59	21694	7647706147403092	CMakeFiles/yolov5ncnn.dir/yolov8_pose.cpp.o	cc2bb2e12e6b8718
+1	257	7707333260210262	build.ninja	4981b063045ca027
+0	8	0	clean	267b28daf0e986

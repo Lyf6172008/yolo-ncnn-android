@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/menuLinearLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/closeMenu2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_bg_shadow_bottom" />
+
+        <LinearLayout
+            android:id="@+id/menuLinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="1200px"
+            android:background="@drawable/bg"
+            android:orientation="vertical"
+            android:paddingBottom="50px">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/menuLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:ignore="Orientation">
+
+                    <LinearLayout
+                        android:id="@+id/推理方式LinearLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@drawable/sku_rg"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <RadioButton
+                                android:id="@+id/CPU"
+                                style="@style/sku_rd"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:checked="true"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="CPU" />
+
+                            <RadioButton
+                                android:id="@+id/GPU"
+                                style="@style/sku_rd2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="GPU" />
+
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tab_background"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tab_background"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/title_bg"
+                                    android:paddingLeft="5dp"
+                                    android:text="推理模型"
+                                    android:textColor="#f2f2f2"
+                                    android:textSize="18dp" />
+
+                                <RadioGroup
+                                    android:layout_width="250dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/sku_rg"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <RadioButton
+                                        android:id="@+id/NCNN"
+                                        style="@style/sku_rd"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:checked="true"
+                                        android:gravity="center"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:text="NCNN" />
+
+                                    <RadioButton
+                                        android:id="@+id/TFLITE"
+                                        style="@style/sku_rd2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:text="TFLITE"
+                                        android:visibility="gone" />
+
+                                    <RadioButton
+                                        android:id="@+id/QNN"
+                                        style="@style/sku_rd2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:text="QNN"
+                                        android:visibility="gone" />
+
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <Spinner
+                                android:id="@+id/model"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_margin="2.5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/spinner_background"
+                                android:outlineAmbientShadowColor="#FFF"
+                                android:popupBackground="@drawable/spinner_background" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/显示基础信息"
+                                    style="@style/CustomCheckboxTheme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="基础信息"
+                                    android:textColor="#f2f2f2"
+                                    android:textSize="16dp" />
+
+                                <CheckBox
+                                    android:id="@+id/识别全屏"
+                                    style="@style/CustomCheckboxTheme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="识别全屏"
+                                    android:textColor="#f2f2f2"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/显示类名"
+                                    style="@style/CustomCheckboxTheme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="显示类名"
+                                    android:textColor="#f2f2f2"
+                                    android:textSize="16dp" />
+
+                                <CheckBox
+                                    android:id="@+id/显示方框"
+                                    style="@style/CustomCheckboxTheme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="显示方框"
+                                    android:textColor="#f2f2f2"
+                                    android:textSize="16dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/显示骨骼"
+                                    style="@style/CustomCheckboxTheme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="显示骨骼"
+                                    android:textColor="#f2f2f2"
+                                    android:textSize="16dp" />
+
+                                <CheckBox
+                                    android:id="@+id/显示轮廓"
+                                    style="@style/CustomCheckboxTheme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="显示轮廓"
+                                    android:textColor="#f2f2f2"
+                                    android:textSize="16dp" />
+
+                            </LinearLayout>
+
+                            <CheckBox
+                                android:id="@+id/保存图片"
+                                style="@style/CustomCheckboxTheme"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:paddingLeft="5dp"
+                                android:text="识别结果自动保存图片"
+                                android:textColor="#f2f2f2"
+                                android:textSize="16dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/开启触摸"
+                                    style="@style/CustomCheckboxTheme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="识别目标自动瞄准"
+                                    android:textColor="#f2f2f2"
+                                    android:textSize="18dp"/>
+
+                                <CheckBox
+                                    android:id="@+id/显示记牌器"
+                                    style="@style/CustomCheckboxTheme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="记牌器"
+                                    android:textColor="#f2f2f2"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/tab_background"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/title_bg"
+                            android:gravity="left|center"
+                            android:paddingLeft="5dp"
+                            android:text="识别速度"
+                            android:textColor="#f2f2f2"
+                            android:textSize="16sp" />
+
+                        <SeekBar
+                            android:id="@+id/识别速度"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:max="5000"
+                            android:maxHeight="4dp"
+                            android:min="1"
+                            android:minHeight="4dp"
+                            android:padding="10dp"
+                            android:progress="10"
+                            android:progressDrawable="@drawable/seekbar_bg"
+                            android:thumb="@drawable/shape_seekbar_circle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/识别范围LinearLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/tab_background"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/title_bg"
+                            android:gravity="left|center"
+                            android:paddingLeft="5dp"
+                            android:text="识别范围（越大识别越慢）"
+                            android:textColor="#f2f2f2"
+                            android:textSize="16sp" />
+
+                        <SeekBar
+                            android:id="@+id/识别范围"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:max="1000"
+                            android:maxHeight="4dp"
+                            android:min="100"
+                            android:minHeight="4dp"
+                            android:padding="10dp"
+                            android:progress="500"
+                            android:progressDrawable="@drawable/seekbar_bg"
+                            android:thumb="@drawable/shape_seekbar_circle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/tab_background"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/title_bg"
+                            android:gravity="left|center"
+                            android:paddingLeft="5dp"
+                            android:text="置信度（越小识别越多）"
+                            android:textColor="#f2f2f2"
+                            android:textSize="16sp" />
+
+                        <SeekBar
+                            android:id="@+id/合格率"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:max="100"
+                            android:maxHeight="4dp"
+                            android:min="1"
+                            android:minHeight="4dp"
+                            android:padding="10dp"
+                            android:progress="10"
+                            android:progressDrawable="@drawable/seekbar_bg"
+                            android:thumb="@drawable/shape_seekbar_circle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/tab_background"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/title_bg"
+                            android:gravity="left|center"
+                            android:paddingLeft="5dp"
+                            android:text="去重叠（越小重叠越少）"
+                            android:textColor="#f2f2f2"
+                            android:textSize="16sp" />
+
+                        <SeekBar
+                            android:id="@+id/nmsThreshold"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:max="100"
+                            android:maxHeight="4dp"
+                            android:min="1"
+                            android:minHeight="4dp"
+                            android:padding="10dp"
+                            android:progress="10"
+                            android:progressDrawable="@drawable/seekbar_bg"
+                            android:thumb="@drawable/shape_seekbar_circle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/tab_background"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/title_bg"
+                            android:gravity="left|center"
+                            android:paddingLeft="5dp"
+                            android:text="图像尺寸（越大越准越慢）"
+                            android:textColor="#f2f2f2"
+                            android:textSize="16sp" />
+
+                        <SeekBar
+                            android:id="@+id/图像尺寸"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:max="2048"
+                            android:maxHeight="4dp"
+                            android:min="320"
+                            android:minHeight="4dp"
+                            android:padding="10dp"
+                            android:progress="320"
+                            android:progressDrawable="@drawable/seekbar_bg"
+                            android:thumb="@drawable/shape_seekbar_circle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/识别类名LinearLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/spinner_background"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/title_bg"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="识别类名"
+                                    android:textColor="#f2f2f2"
+                                    android:textSize="18dp" />
+
+                                <Button
+                                    android:id="@+id/编辑类名"
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/btn4"
+                                    android:text="编辑类名"
+                                    android:textColor="#F2f2f2"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/识别类名"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="1,2,3,4"
+                                android:textSize="18dp"
+                                android:visibility="gone" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/类名复选"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp">
+
+                <Button
+                    android:id="@+id/重置记牌"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn4"
+                    android:text="重置记牌"
+                    android:textColor="#F2f2f2" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/退出程序"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:text="退  出  程  序"
+                    android:textColor="#F2f2f2" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

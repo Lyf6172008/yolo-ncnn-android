@@ -1,0 +1,7 @@
+Executable : D:\Android\sdk\cmake\3.22.1\bin\ninja.exe
+arguments : 
+-C
+D:\AndroidWork\Yolo5_screen_identify\app\.cxx\cmake\release\armeabi-v7a
+yolov5ncnn
+jvmArgs : 
+

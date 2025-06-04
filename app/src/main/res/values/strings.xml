@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YOLO图像识别</string>
+    <string-array name="cpugpu_array">
+        <item>CPU</item>
+        <item>GPU</item>
+    </string-array>
+    <string-array name="screen_array">
+        <item>竖屏</item>
+        <item>横屏</item>
+    </string-array>
+
+    <string name="start">开始监听</string>
+    <string name="need_permission">需要安装或激活Shizuku、并授予相应权限</string>
+    <string name="touch_tips">此时在屏幕任意位置触摸可查看事件</string>
+    <string name="end">退出程序</string>
+</resources>

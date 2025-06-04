@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdk 34
+    buildToolsVersion '34.0.0 rc3'
+
+    defaultConfig {
+        applicationId "com.tencent.yolov5ncnn"
+        archivesBaseName = "$applicationId"
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++17 -stdlib=libc++"
+            }
+        }
+        ndk {
+            moduleName "ncnn"
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+        minSdkVersion 24
+    }
+
+    externalNativeBuild {
+        cmake {
+            version "3.22.1"
+            path file('src/main/jni/CMakeLists.txt')
+        }
+    }
+
+    dependencies {
+
+        // Import tflite dependencies
+        // implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly-SNAPSHOT'
+//        implementation 'org.tensorflow:tensorflow-lite:2.8.0'
+//        // The GPU delegate library is optional. Depend on it as needed.
+//        // implementation 'org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly-SNAPSHOT'
+//        implementation 'org.tensorflow:tensorflow-lite-gpu:2.8.0'
+//        // implementation 'org.tensorflow:tensorflow-lite-support:0.0.0-nightly-SNAPSHOT'
+//        implementation 'org.tensorflow:tensorflow-lite-support:0.3.1'
+//        implementation 'org.tensorflow:tensorflow-lite-metadata:0.3.1'
+
+//        api 'org.tensorflow:tensorflow-lite:2.16.1'
+//        api 'org.tensorflow:tensorflow-lite-support:0.4.4'
+//        implementation 'org.tensorflow:tensorflow-lite-gpu:2.16.1'
+//        implementation 'org.tensorflow:tensorflow-lite-gpu-api:2.16.1'
+//        implementation 'org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.4'
+//        implementation "com.qualcomm.qti:qnn-runtime:$qnnVersion"
+//        implementation "com.qualcomm.qti:qnn-litert-delegate:$qnnVersion"
+
+
+//        implementation 'com.android.support:support-v4:24.0.0'
+        implementation 'androidx.core:core:1.6.0'
+        implementation 'com.google.code.gson:gson:2.10.1'
+        implementation 'org.java-websocket:Java-WebSocket:1.5.2'
+        implementation 'androidx.recyclerview:recyclerview:1.2.1'
+//        implementation 'io.netty:netty-all:4.1.73.Final'
+//        implementation 'io.netty:netty-transport-native-epoll:4.1.73.Final'
+
+//        implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.6'
+        implementation 'cn.hutool:hutool-all:5.7.16'
+//        implementation "cn.bigmodel.openapi:oapi-java-sdk:release-V4-2.3.3"
+//        implementation("ch.qos.logback:logback-classic:1.4.14")
+    }
+//    packagingOptions {
+//        // 选择第一个遇到的 META-INF/io.netty.versions.properties 文件，避免冲突
+//        pickFirst 'META-INF/io.netty.versions.properties'
+//        pickFirst 'META-INF/INDEX.LIST'
+//
+//        // 处理其他可能的冲突文件
+//        pickFirst 'META-INF/NOTICE.txt'
+//        pickFirst 'META-INF/LICENSE.txt'
+//        pickFirst 'META-INF/ASL2.0'
+//        pickFirst 'META-INF/DEPENDENCIES'
+//
+//        // 排除不需要的文件（如果有）
+//        exclude 'META-INF/NOTICE'
+//        exclude 'META-INF/LICENSE'
+//        exclude 'META-INF/ASL2.0'
+//    }
+
+
+    ndkVersion '27.1.12297006'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
